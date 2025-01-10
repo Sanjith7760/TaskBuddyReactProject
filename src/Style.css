@@ -1,0 +1,200 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #f5f7fa, #c3cfe2); /* Soft gradient background */
+  color: #333;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(to right, #667eea, #764ba2); /* Purple gradient */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 20px auto;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.app {
+  text-align: center;
+}
+
+.home {
+  padding: 20px;
+  width: 95%; /* Increased width */
+  max-width: 1200px; /* Increased max-width */
+  margin: 20px auto 0;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Form Styles */
+.task-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.task-input {
+  width: 250px;
+  padding: 8px;
+  margin-right: 10px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+}
+
+.task-input:focus {
+  border-color: #667eea; /* Purple border on focus */
+  outline: none;
+  box-shadow: 0 0 8px rgba(102, 126, 234, 0.4);
+}
+
+.add-task-button {
+  padding: 8px 12px;
+  border: none;
+  background: linear-gradient(to right, #667eea, #764ba2); /* Purple gradient */
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  transition: transform 0.2s ease, background-color 0.3s;
+}
+
+.add-task-button:hover {
+  background: linear-gradient(to right, #764ba2, #667eea);
+  transform: scale(1.02);
+}
+
+/* Section Styles */
+.task-sections {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 30px; /* Increased gap between sections */
+  width: 100%; /* Ensure it takes full width */
+}
+
+.task-section {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  width: 33%; /* Adjusted width for better spacing */
+  padding: 15px; /* Increased padding for more internal space */
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.task-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.task-section h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #444;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #667eea; /* Purple underline */
+  padding-bottom: 5px;
+  width: 100%;
+}
+
+.task-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.task-section li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px; /* Adjusted padding for tasks */
+  margin-bottom: 8px; /* Adjusted margin between tasks */
+  background: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  transition: box-shadow 0.3s ease;
+}
+
+.task-section li:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styles */
+.move-button {
+  background: linear-gradient(to right, #667eea, #764ba2); /* Purple gradient */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 6px; /* Smaller padding for buttons */
+  font-size: 0.6em; /* Smaller font size */
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s, box-shadow 0.3s;
+  margin: 2px;
+}
+
+.move-button:hover {
+  transform: translateY(-1px);
+  background: linear-gradient(to right, #764ba2, #667eea);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.move-button:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.delete-button {
+  background: linear-gradient(to right, #ff6b6b, #ff4757); /* Red gradient */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 6px; /* Smaller padding for buttons */
+  font-size: 0.6em; /* Smaller font size */
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s, box-shadow 0.3s;
+  margin: 2px;
+}
+
+.delete-button:hover {
+  transform: translateY(-1px);
+  background: linear-gradient(to right, #ff4757, #ff6b6b);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.delete-button:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Task Actions Container */
+.task-actions {
+  display: flex;
+  gap: 4px; /* Smaller gap between buttons */
+}
